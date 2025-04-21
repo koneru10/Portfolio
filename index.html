@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chandraja K | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    nav {
+      background: #004080;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+    }
+    nav a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #ffffff;
+      transition: width 0.3s;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    header {
+      background: linear-gradient(90deg, #004080, #0073e6);
+      color: white;
+      padding: 4rem 1rem 3rem;
+      text-align: center;
+      position: relative;
+    }
+    #animated-name {
+      font-size: 3rem;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid #ffd700;
+      width: fit-content;
+      margin: 0 auto;
+      animation: blink-caret 0.75s step-end infinite;
+      color: #ffd700;
+    }
+    #animated-role {
+      font-size: 1.4rem;
+      font-weight: 400;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #ffd700;
+      width: fit-content;
+      margin: 1rem auto 0;
+      animation: blink-caret 0.75s step-end infinite;
+      color: #ffffff;
+    }
+    @keyframes blink-caret {
+      from, to { border-color: transparent; }
+      50% { border-color: #ffd700; }
+    }
+    .contact p {
+      margin: 0.3rem 0;
+      font-size: 1rem;
+    }
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: white;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 2rem auto 1rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      border-bottom: 2px solid #004080;
+      padding-bottom: 0.5rem;
+      color: #004080;
+      margin-top: 0;
+    }
+    ul {
+      padding-left: 1.2rem;
+      line-height: 1.8;
+    }
+    li {
+      margin-bottom: 0.8rem;
+    }
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .icon {
+      margin-right: 8px;
+      color: #0073e6;
+    }
+    .project-img {
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      margin: 1rem auto 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .certificate-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .certificate-gallery img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#internships">Internships</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#competencies">Competencies</a>
+  <a href="#personal">Personal Info</a>
+</nav>
+
+<header>
+  <img src="passport photo edited.JPG" alt="Chandraja Photo" class="profile-pic" />
+  <h1 id="animated-name"></h1>
+  <p id="animated-role"></p>
+  <div class="contact">
+    <p><i class="fas fa-phone icon"></i> +91 93464 82624</p>
+    <p><i class="fas fa-envelope icon"></i> koneruchandraja@gmail.com</p>
+    <p><i class="fas fa-map-marker-alt icon"></i> Ongole, Andhra Pradesh, India</p>
+  </div>
+</header>
+
+<section id="about">
+  <h2><i class="fas fa-user icon"></i> About Me</h2>
+  <p>
+    I am a motivated and detail-oriented Computer Applications student with strong knowledge in programming, web development, and cybersecurity. I am passionate about continuous learning and leveraging technology to solve real-world problems.
+  </p>
+</section>
+
+<section id="education">
+  <h2><i class="fas fa-graduation-cap icon"></i> Educational Background</h2>
+  <ul>
+    <li><strong>MCA (Pursuing)</strong> – Aditya University, Surampalem (2026)</li>
+    <li><strong>BCA</strong> – Sri Harshini Degree College, Ongole (2024) | CGPA: 9.1</li>
+    <li><strong>Intermediate</strong> – Sri Saraswathi Junior College, Ongole (2021) | CGPA: 9.3</li>
+    <li><strong>10th</strong> – QIS High School, Ongole (2019) | CGPA: 9.2</li>
+  </ul>
+</section>
+
+<section id="internships">
+  <h2><i class="fas fa-briefcase icon"></i> Internships</h2>
+  <ul>
+    <li><strong>Cyber Security Intern</strong> – ExcelR Edtech Pvt. Ltd (Long-Term)<br>Gained experience in ethical hacking, network security, and industry tools.</li>
+    <li><strong>Web Development Intern</strong> – OctaNet Services Pvt. Ltd (Virtual, 2 Months)<br>Built a responsive news site titled "Hot News" using HTML, CSS, and JavaScript.</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2><i class="fas fa-code icon"></i> Projects</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: flex-start;">
+    <div style="flex: 1 1 300px; text-align: center;">
+      <img src="octanet ss.png" alt="Hot News Project Screenshot" class="project-img" />
+    </div>
+    <div style="flex: 2 1 400px;">
+      <h3 style="margin-top: 0;">Hot News – Web Page</h3>
+      <p><strong>Description:</strong> A modern, responsive news website created as part of a web development internship. The project features a clean layout, category-based news sections, and an interactive design that adapts to all screen sizes.</p>
+      <p><strong>Technologies Used:</strong> HTML5, CSS3, JavaScript</p>
+      <p><strong>My Role:</strong> Front-end developer – designed the UI/UX, implemented responsive layouts, and added dynamic behavior using JavaScript.</p>
+      <p><strong>Outcome:</strong> Improved hands-on experience with responsive design, code optimization, and front-end development workflows.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2><i class="fas fa-cogs icon"></i> Technical Skills</h2>
+  <ul>
+    <li><strong>Languages:</strong> C, Python, SQL, Java (Basic)</li>
+    <li><strong>Web:</strong> HTML, CSS, JavaScript</li>
+    <li><strong>Tools:</strong> MS Office</li>
+  </ul>
+</section>
+
+<section id="certifications">
+  <h2><i class="fas fa-certificate icon"></i> Certifications</h2>
+  <ul>
+    <li>Object-Oriented Programming using Python – Infosys Springboard</li>
+    <li>Fundamentals of Python – Infosys Springboard</li>
+    <li>C Programming – SoloLearn</li>
+    <li>Young Professional Program – TCS iON Career Edge</li>
+    <li>Cyber Security Internship – ExcelR Edtech Pvt. Ltd</li>
+    <li>Web Development Internship – OctaNet Services Pvt. Ltd</li>
+  </ul>
+  <div class="certificate-gallery">
+    <img src="C:\Users\K Chandraja\OneDrive\Desktop\portfolio\Octanet Certificate_page-0001.jpg" alt="Octanet Certificate" />
+    <img src="C:\Users\K Chandraja\OneDrive\Desktop\portfolio\TCS ion report 252_page-0001.jpg" alt="TCS iON Report" />
+    <img src="C:\Users\K Chandraja\OneDrive\Desktop\portfolio\infosys springboard_page-0001.jpg" alt="Infosys Springboard Certificate" />
+  </div>
+</section>
+
+<section id="competencies">
+  <h2><i class="fas fa-star icon"></i> Core Competencies</h2>
+  <ul>
+    <li>Adaptable and quick learner</li>
+    <li>Self-driven and motivated</li>
+    <li>Strong analytical and collaborative skills</li>
+  </ul>
+</section>
+
+<section id="personal">
+  <h2><i class="fas fa-info-circle icon"></i> Personal Info</h2>
+  <ul>
+    <li><strong>Hobbies:</strong> Drawing, Listening to Music, Traveling</li>
+    <li><strong>Languages Known:</strong> English, Hindi, Telugu</li>
+    <li><strong>Address:</strong> Thurupu Kammapalem, Near Venkateswara Temple, Ongole, Andhra Pradesh</li>
+  </ul>
+</section>
+
+<footer>
+  &copy; 2025 Chandraja K. All Rights Reserved.
+</footer>
+
+<script>
+  const nameText = "Chandraja K";
+  const roleText = "I'm a learner, enthusiastic in Cyber Security";
+  const nameEl = document.getElementById("animated-name");
+  const roleEl = document.getElementById("animated-role");
+  let nameIndex = 0;
+  let roleIndex = 0;
+  function typeName() {
+    if (nameIndex < nameText.length) {
+      nameEl.innerHTML += nameText.charAt(nameIndex);
+      nameIndex++;
+      setTimeout(typeName, 120);
+    } else {
+      setTimeout(typeRole, 400);
+    }
+  }
+  function typeRole() {
+    if (roleIndex < roleText.length) {
+      roleEl.innerHTML += roleText.charAt(roleIndex);
+      roleIndex++;
+      setTimeout(typeRole, 80);
+    }
+  }
+  window.onload = typeName;
+</script>
+</body>
+</html>
